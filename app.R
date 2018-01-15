@@ -150,7 +150,10 @@ library(shinydashboard)
 
 ui <- dashboardPage(
   dashboardHeader(title = "Bitcoin Exchange Calculator"),
-  dashboardSidebar(),
+  dashboardSidebar(
+    a(h4("Go Home"), target = "_blank", href = paste0("http://www.joe-data.com/"))
+    
+  ),
   dashboardBody(
     # Boxes need to be put in a row (or column)
     fluidRow(
@@ -164,6 +167,7 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output) {
+  
   
   output$text <- renderInfoBox({
     #---------->  Collect data from all Exchanges--------------------------------
