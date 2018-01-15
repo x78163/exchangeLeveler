@@ -256,7 +256,7 @@ server <- function(input, output) {
     
     infoBox(
       
-      "Best Exchange Data:", text, icon = icon("exchange"),
+      "Best Exchange Data!:", text, icon = icon("exchange"),
       color = "purple", fill = TRUE
     )
   })
