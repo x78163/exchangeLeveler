@@ -151,7 +151,7 @@ library(shinydashboard)
 ui <- dashboardPage(
   dashboardHeader(title = "Bitcoin Exchange Calculator"),
   dashboardSidebar(
-    a(h4("Go Home"), target = "_blank", href = paste0("http://www.joe-data.com/"))
+    a(h4("Go Home"), href = paste0("http://www.joe-data.com/"))
     
   ),
   dashboardBody(
