@@ -250,7 +250,7 @@ server <- function(input, output) {
     
     delta = maxValue- minValue
     ROI = (((maxValue-minValue)/minValue)*100)
-    
+    #
     #----------> Generate Output Message for User With Purchasing Advice --------------------------------
     text = paste("The highest yield is: $", round(delta, digits = 2), "If you buy 1x Bitcoin on",minName , " for: $",round(minValue, digits = 2), ", you can sell it on: ",maxName , " for: $", round(maxValue, digits = 2), ".  This is a:", round(ROI, digits=0),"% Return on Investment" )
     
